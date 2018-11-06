@@ -18,6 +18,7 @@ export default {
   },
   actions: {
     getAllPosts ({ commit, state }) {
+      // async await
       Vue.http.get(state.endpoint)
         .then(response => {
           return response.json()

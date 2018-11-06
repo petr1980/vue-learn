@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Login from './views/Auth/Login.vue'
+import Registration from './views/Auth/Registration.vue'
+import TestComponent from './components/TestComponent.vue'
 
 Vue.use(Router)
 
@@ -12,6 +15,22 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/post/:id',
+      name: 'post',
+      component: TestComponent,
+      props: true
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
+    },
+    {
+      path: '/registration',
+      name: 'registration',
+      component: Registration
     },
     {
       path: '/about',

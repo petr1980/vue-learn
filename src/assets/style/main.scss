@@ -1,0 +1,29 @@
+@import 'utils/normalize.scss';
+@import 'utils/vars.scss';
+@import 'utils/mixins.scss';
+
+@import 'components/header.scss';
+@import 'components/form.scss';
+
+#app {
+  padding-top: 6em;
+  font-size: $ff;
+  color: $color;
+  font-family: $ff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.container {
+  width: 1400px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0em 0 1em; 
+  font-size: 2em;
+  text-align: center;
+}

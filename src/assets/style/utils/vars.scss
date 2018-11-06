@@ -1,0 +1,11 @@
+$color: #333;
+$color2: #42b983;
+$fz: 16px;
+$ff: 'Avenir', Helvetica, Arial, sans-serif;
+$border: #333;
+
+// animation
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}

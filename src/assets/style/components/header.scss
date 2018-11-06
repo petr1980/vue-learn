@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+  border-bottom: 1px solid #333;
+  .user {
+    display: inline-block;
+    padding: 10px;
+    background: #f6f6f6;
+  }
+}
+
+#nav {
+  padding: 30px;
+  a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+    &:hover {
+      border: 1px solid $color2;
+    }
+    &.router-link-exact-active {
+      color: $color2;
+      border: 1px solid $color2;
+    }
+  }
+}
